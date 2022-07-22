@@ -1,0 +1,5 @@
+build/
+dist/
+nbproject/
+build.xml
+src/serverFlask/data_tes/
