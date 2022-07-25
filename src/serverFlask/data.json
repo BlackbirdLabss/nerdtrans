@@ -1,5 +1,8 @@
 {
       "success": true,
       "file": "File berhasil di simpan",
-      "label": 2
+      "acc_moped": 0.9999768733978271,
+      "acc_sport": 2.2181993699632585e-05,
+      "acc_scooter": 9.639048812459805e-07,
+      "label": 0
 }

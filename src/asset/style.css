@@ -1,7 +1,20 @@
-.idTentang{
-    -fx-background-color:yellow;
+#idTentang{
+    -fx-background-color: #F99024;
+}
+
+#idPilihGambar{
+    -fx-background-color:#F99024 ;
+}
+
+#idPrediksi{
+    -fx-background-color:#F99024 ;
 }
 
 
+#idBeranda{
+    -fx-background-color:transparent ;
+}
 
-
+#idGrafik{
+    -fx-background-color:#F99024 ;
+}

@@ -23,18 +23,18 @@
                      <children>
                         <ImageView fitHeight="40.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" x="12.0" y="15.0">
                            <image>
-                              <Image url="@../asset/Picture2.png" />
+                              <Image url="@../asset/logo.png" />
                            </image>
                            <HBox.margin>
                               <Insets left="20.0" top="6.0" />
                            </HBox.margin>
                         </ImageView>
-                        <Button mnemonicParsing="false" prefHeight="15.0" prefWidth="89.0" style="-fx-background-color: transparent;" text="Beranda">
+                        <Button mnemonicParsing="false" onAction="#switchPrediksiToHalamanBeranda" prefHeight="15.0" prefWidth="89.0" style="-fx-background-color: transparent;" text="Beranda">
                            <HBox.margin>
                               <Insets bottom="20.0" left="20.0" right="20.0" top="16.0" />
                            </HBox.margin>
                         </Button>
-                        <Button fx:id="idTentang" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Tentang">
+                        <Button fx:id="idTentang" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" stylesheets="@../asset/style.css" text="Tentang">
                            <HBox.margin>
                               <Insets top="16.0" />
                            </HBox.margin>
@@ -96,7 +96,7 @@
                                     <Insets left="60.0" top="10.0" />
                                  </VBox.margin>
                               </Text>
-                              <Button fx:id="idPilihGambar" mnemonicParsing="false" onAction="#uploadImage" text="Pilih Gambar">
+                              <Button fx:id="idPilihGambar" mnemonicParsing="false" onAction="#uploadImage" stylesheets="@../asset/style.css" text="Pilih Gambar">
                                  <VBox.margin>
                                     <Insets left="25.0" top="10.0" />
                                  </VBox.margin>
@@ -118,16 +118,19 @@
                               </Line>
                            </children>
                         </VBox>
-                        <VBox prefHeight="198.0" prefWidth="155.0">
+                        <VBox prefHeight="203.0" prefWidth="155.0">
                            <HBox.margin>
                               <Insets left="60.0" />
                            </HBox.margin>
                            <children>
                               <Pane fx:id="viewPrediksi" prefHeight="169.0" prefWidth="155.0">
                                  <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                                 <opaqueInsets>
                                     <Insets />
-                                 </VBox.margin></Pane>
-                              <Button fx:id="idPrediksi" mnemonicParsing="false" onAction="#prediksi" text="Prediksi">
+                                 </opaqueInsets></Pane>
+                              <Button fx:id="idPrediksi" disable="true" mnemonicParsing="false" onAction="#prediksi" text="Prediksi">
                                  <VBox.margin>
                                     <Insets left="45.0" top="10.0" />
                                  </VBox.margin>

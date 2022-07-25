@@ -128,4 +128,23 @@ public class RestAPI_controller {
  
         return response;
     }
+    
+    public boolean checkStatus() throws IOException{
+        boolean cek = false;
+        try{
+        int status = httpConn.getResponseCode();
+        if(status==HttpURLConnection.HTTP_OK){
+            System.out.println("Konenksi Server terhubung");
+            System.exit(0);  
+            cek=true;
+        }else{
+            System.out.println("Koneksi server terputus");
+            System.exit(0);  
+            cek=false;
+        }
+        }catch(Exception e){
+            
+        }
+        return cek;
+    }
 }
