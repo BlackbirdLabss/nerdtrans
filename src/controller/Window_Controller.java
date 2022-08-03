@@ -45,7 +45,6 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.shape.Polygon;
 import javafx.util.Duration;
-import com.interactivemesh.jfx.importer.obj.ObjModelImporter;
 import javafx.animation.Interpolator;
 import javafx.scene.SubScene;
 import javafx.scene.shape.MeshView;
@@ -138,7 +137,7 @@ public class Window_Controller implements Initializable{
     public void switchToHalamanGrafik(ActionEvent event)throws IOException{ 
         AnchorPane root = (AnchorPane) FXMLLoader.load(getClass().getResource("/view/HalamanGrafik.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
+        scene = new Scene(root, 1000, 900);
         scene.getStylesheets().add(getClass().getResource("/asset/style.css").toExternalForm());
         stage.setScene(scene);
         stage.show();

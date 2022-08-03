@@ -12,13 +12,13 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="676.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.LatihDao">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="model.LatihDao">
    <children>
-      <AnchorPane layoutX="-2.0" prefHeight="676.0" prefWidth="607.0">
+      <AnchorPane layoutX="-2.0" prefHeight="676.0">
          <children>
-            <VBox prefHeight="676.0" prefWidth="607.0">
+            <VBox prefHeight="676.0">
                <children>
-                  <HBox prefHeight="72.0" prefWidth="607.0">
+                  <HBox prefHeight="71.0" prefWidth="942.0">
                      <children>
                         <ImageView fitHeight="40.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true" x="12.0" y="15.0">
                            <image>
@@ -28,21 +28,21 @@
                               <Insets left="20.0" top="6.0" />
                            </HBox.margin>
                         </ImageView>
-                        <Button mnemonicParsing="false" onAction="#switchGrafikToHalamanBeranda" prefHeight="15.0" prefWidth="89.0" style="-fx-background-color: transparent;" text="Beranda">
+                        <Button mnemonicParsing="false" onAction="#switchGrafikToHalamanBeranda" prefHeight="15.0" style="-fx-background-color: transparent;" text="Beranda">
                            <HBox.margin>
                               <Insets bottom="20.0" left="20.0" right="20.0" top="16.0" />
                            </HBox.margin>
                         </Button>
-                        <Button fx:id="idTentang" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" stylesheets="@../asset/style.css" text="Tentang">
+                        <Button fx:id="idTentang" mnemonicParsing="false" prefHeight="25.0" stylesheets="@../asset/style.css" text="Tentang">
                            <HBox.margin>
                               <Insets top="16.0" />
                            </HBox.margin>
                         </Button>
-                        <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="52.0">
+                        <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0">
                            <children>
                               <Button mnemonicParsing="false" visible="false">
                                  <StackPane.margin>
-                                    <Insets left="250.0" top="20.0" />
+                                    <Insets top="20.0" />
                                  </StackPane.margin>
                               </Button>
                               <ImageView fitHeight="20.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
@@ -50,15 +50,15 @@
                                     <Image url="@../asset/Picture2.png" />
                                  </image>
                                  <StackPane.margin>
-                                    <Insets left="250.0" top="16.0" />
+                                    <Insets top="16.0" />
                                  </StackPane.margin>
                               </ImageView>
                            </children>
                            <HBox.margin>
-                              <Insets />
+                              <Insets left="560.0" />
                            </HBox.margin>
                         </StackPane>
-                        <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="57.0">
+                        <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0">
                            <children>
                               <Button mnemonicParsing="false" visible="false" />
                               <ImageView fitHeight="20.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
@@ -68,14 +68,14 @@
                               </ImageView>
                            </children>
                            <HBox.margin>
-                              <Insets left="105.0" />
+                              <Insets left="20.0" />
                            </HBox.margin>
                         </StackPane>
                      </children>
                   </HBox>
-                  <AnchorPane fx:id="idAnchor" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="607.0">
+                  <AnchorPane fx:id="idAnchor" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0">
                      <children>
-                        <BarChart fx:id="barChartSport" layoutX="54.0" prefHeight="197.0" prefWidth="345.0" title="Akurasi Motor Sport ">
+                        <BarChart fx:id="barChartSport" layoutX="40.0" prefHeight="197.0" prefWidth="861.0" title="Akurasi Motor Sport ">
                           <xAxis>
                             <CategoryAxis fx:id="idLabelSport" label="Label" side="BOTTOM" />
                           </xAxis>
@@ -83,7 +83,7 @@
                             <NumberAxis fx:id="idAkurasiSport" label="Akurasi" side="LEFT" />
                           </yAxis>
                         </BarChart>
-                        <BarChart fx:id="barChartScooter" layoutX="72.0" layoutY="197.0" prefHeight="197.0" prefWidth="345.0" title="Akurasi Motor Scooter ">
+                        <BarChart fx:id="barChartScooter" layoutX="40.0" layoutY="195.0" prefHeight="197.0" prefWidth="861.0" title="Akurasi Motor Scooter ">
                            <xAxis>
                               <CategoryAxis fx:id="idLabelScooter" label="Label" side="BOTTOM" />
                            </xAxis>
@@ -91,7 +91,7 @@
                               <NumberAxis fx:id="idAkurasiScooter" label="Akurasi" side="LEFT" />
                            </yAxis>
                         </BarChart>
-                        <BarChart fx:id="barChartMoped" layoutX="72.0" layoutY="394.0" prefHeight="197.0" prefWidth="345.0" title="Akurasi Motor Moped">
+                        <BarChart fx:id="barChartMoped" layoutX="44.0" layoutY="393.0" prefHeight="197.0" prefWidth="861.0" title="Akurasi Motor Moped">
                            <xAxis>
                               <CategoryAxis fx:id="idLabelMoped" label="Label" side="BOTTOM" />
                            </xAxis>
